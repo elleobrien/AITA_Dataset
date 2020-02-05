@@ -1,0 +1,7 @@
+md5: 7824c61016857fbb19fb5badb279de4f
+outs:
+- md5: a81d16985d2f630c742f53cf8d7a4c4a
+  path: AITA_posts.csv
+  cache: true
+  metric: false
+  persist: false
