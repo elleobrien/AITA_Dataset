@@ -1,0 +1,4 @@
+['remote "myremote"']
+url = s3://dvc-temp/AITA_Dataset
+[core]
+remote = myremote
