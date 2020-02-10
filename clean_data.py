@@ -25,6 +25,10 @@ print("After removing deleted posts, there are " +  str(len(df_use)) + " posts l
 # Make a grand binary variable conslidating "no assholes here" and "everyone sucks" into the dominant classes
 df_use["is_asshole"] = [1 if x in ["asshole","everyone sucks"] else 0 for x in df_use["verdict"]]
 
+# Subset it!
+df_use = df_use.sample(10000)
+print(len(df_use))
+
 # We only want to keep 8
 # Write to file
 df_use.to_csv("AITA_cleaned.csv")
